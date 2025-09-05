@@ -5,8 +5,8 @@ import pillow_heif
 # ------------------------
 # IBM Watson Fraud Detection Setup
 # ------------------------
-IBM_API_KEY = "kNy51yh8PCw3DouJHTua7l4Kx1RT7u4PSFMgt-GoPOzh"
-IBM_DEPLOYMENT_URL = "https://au-syd.ml.cloud.ibm.com/ml/v4/deployments/technos/predictions?version=2021-05-01"
+IBM_API_KEY = "#YOUR OWN API KEY FROM IBM WEBSITE "
+IBM_DEPLOYMENT_URL = "YOUR OWN DEVELPOED MODEL LINK FROM IBM WEBSITE"
 
 def get_token():
     url = "https://iam.cloud.ibm.com/identity/token"
@@ -52,8 +52,8 @@ def call_ibm_model(*args):
 # Car Damage Detection Setup
 # ------------------------
 pillow_heif.register_heif_opener()
-API_URL = "https://detect.roboflow.com/car-damage-detection-t0g92-qd7x2/1"
-API_KEY = "s1sereFwcK66zA6funIr"
+API_URL = "YOUR OWN URL FROM ROBOFLOW TRAINED MODEL "
+API_KEY = "YOUR OWN API KEY FROM ROBOFLOW TRAINED MODEL WEBSITE "
 
 def predict_damage(image_path):
     with open(image_path, "rb") as f:
